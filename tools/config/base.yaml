@@ -10,4 +10,4 @@ arxiv:
 
 # Hugging Face configuration
 hugging_face:
-  max_papers: 1
+  max_papers: 3
