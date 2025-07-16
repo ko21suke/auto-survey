@@ -1,0 +1,13 @@
+# ArXiv configuration
+arxiv:
+  categories:
+    - cs.RO
+    - cs.CV
+    - cs.LG
+    - cs.AI
+    - cs.SY
+  max_papers_per_category: 3
+
+# Hugging Face configuration
+hugging_face:
+  max_papers: 1

@@ -7,6 +7,8 @@ arXivのRSSフィードから最新の情報科学論文を取得し、Gemini AP
 import argparse
 from collections import defaultdict
 import time
+import yaml
+import os
 from analyzer import GeminiAnalyzer
 from fetchers import ArxivRSSFetcher
 from fetchers import HuggingFaceFetcher
@@ -14,9 +16,14 @@ from paper_tracker import PaperTracker
 from slack_notifier import SlackNotifier
 from utils import save_summary
 
-ARXIV_CATEGORIES = ["cs.RO", "cs.CV", "cs.LG", "cs.AI", "cs.SY"]
-ARXIV_MAX_PAPERS_PER_CATEGORY = 3
-HUGGING_FACE_MAX_PAPERS = 1
+# Configuration will be loaded from YAML file
+config = {}
+
+
+def load_config(config_path):
+    """YAMLファイルから設定を読み込む"""
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
 
 
 def parse_args():
@@ -27,6 +34,11 @@ def parse_args():
         choices=['a', 'h'],
         default='h',
         help="論文の取得元を指定 (a: arXiv, h: Hugging Face Daily Papers)"
+    )
+    parser.add_argument(
+        '-c', '--config',
+        default='config/base.yaml',
+        help="設定ファイルのパス (デフォルト: config/base.yaml)"
     )
     return parser.parse_args()
 
@@ -50,7 +62,12 @@ def clearup_old_summaries(tracker: PaperTracker, days: int = 7) -> None:
 
 def main():
     args = parse_args()
-    import os
+    
+    # Load configuration
+    global config
+    config_path = os.path.join(os.path.dirname(__file__), args.config)
+    config = load_config(config_path)
+    
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
     if not GEMINI_API_KEY:
         print("エラー: 環境変数 GEMINI_API_KEY が設定されていません")
@@ -67,19 +84,19 @@ def main():
     print(f"論文ソース: {'arXiv' if args.source == 'a' else 'Hugging Face Daily Papers'}")
 
     if args.source == 'a':
-        print(f"カテゴリ: {', '.join(ARXIV_CATEGORIES)}")
-        print(f"カテゴリごとの最大論文数: {ARXIV_MAX_PAPERS_PER_CATEGORY}")
+        print(f"カテゴリ: {', '.join(config['arxiv']['categories'])}")
+        print(f"カテゴリごとの最大論文数: {config['arxiv']['max_papers_per_category']}")
     else:
-        print(f"全体の最大論文数: {HUGGING_FACE_MAX_PAPERS}")
+        print(f"全体の最大論文数: {config['hugging_face']['max_papers']}")
 
     tracker = PaperTracker()
     all_papers = []
 
     if args.source == 'a':
         fetcher = ArxivRSSFetcher()
-        for category in ARXIV_CATEGORIES:
+        for category in config['arxiv']['categories']:
             print(f"\nカテゴリ {category} から論文を取得中...")
-            papers = fetcher.fetch_papers(category=category, max_results=ARXIV_MAX_PAPERS_PER_CATEGORY * 2)  # 余裕を持って2倍取得
+            papers = fetcher.fetch_papers(category=category, max_results=config['arxiv']['max_papers_per_category'] * 2)  # 余裕を持って2倍取得
             all_papers.extend(papers)
         # サンプル実行用のダミーデータ（テスト用）
         # all_papers = [
@@ -97,7 +114,7 @@ def main():
     elif args.source == 'h':
         print("Hugging Face Daily Papersから論文を取得中...")
         hf_fetcher = HuggingFaceFetcher()
-        all_papers = hf_fetcher.fetch_papers(max_papers=HUGGING_FACE_MAX_PAPERS)
+        all_papers = hf_fetcher.fetch_papers(max_papers=config['hugging_face']['max_papers'])
 
     if not all_papers:
         print("論文が取得できませんでした")
@@ -116,14 +133,14 @@ def main():
                 paper_category = paper.categories.split(',')[0].strip() if hasattr(paper, 'categories') and paper.categories else paper.category
 
                 # カテゴリごとのカウントを管理
-                if category_counts[paper_category] < ARXIV_MAX_PAPERS_PER_CATEGORY:
+                if category_counts[paper_category] < config['arxiv']['max_papers_per_category']:
                     new_papers.append(paper)
                     category_counts[paper_category] += 1
     else:
         for paper in all_papers:
             if not tracker.is_summarized(paper.link):
                 new_papers.append(paper)
-                if len(new_papers) >= HUGGING_FACE_MAX_PAPERS:
+                if len(new_papers) >= config['hugging_face']['max_papers']:
                     break
 
     if not new_papers:
@@ -133,7 +150,7 @@ def main():
 
     papers = new_papers
     if args.source == 'a':
-        print(f"新しい論文を{len(papers)}件発見しました（カテゴリごとに最大{ARXIV_MAX_PAPERS_PER_CATEGORY}件）")
+        print(f"新しい論文を{len(papers)}件発見しました（カテゴリごとに最大{config['arxiv']['max_papers_per_category']}件）")
     else:
         print(f"新しい論文を{len(papers)}件発見しました")
 
