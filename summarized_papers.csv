@@ -1,6 +1,4 @@
 url,arxiv_id,title,summarized_at,file_path
-http://arxiv.org/abs/2507.07966v1,2507.07966,Scaling RL to Long Videos,2025-07-13T04:22:46.764862,../summary/Scaling RL to Long Videos.md
-http://arxiv.org/abs/2507.01951v2,2507.01951,Test-Time Scaling with Reflective Generative Model,2025-07-14T07:05:59.665186,../summary/Test-Time Scaling with Reflective Generative Model.md
 http://arxiv.org/abs/2507.10548v1,2507.10548,EmbRACE-3K: Embodied Reasoning and Action in Complex Environments,2025-07-15T08:32:27.487358,../summary/EmbRACE-3K Embodied Reasoning and Action in Complex Environments.md
 http://arxiv.org/abs/2507.10532v1,2507.10532,Reasoning or Memorization? Unreliable Results of Reinforcement Learning   Due to Data Contamination,2025-07-16T00:58:27.025704,../summary/Reasoning or Memorization Unreliable Results of Reinforcement Learning   Due to Data Contamination.md
 http://arxiv.org/abs/2507.07104v2,2507.07104,Vision-Language-Vision Auto-Encoder: Scalable Knowledge Distillation   from Diffusion Models,2025-07-16T08:32:34.459362,../summary/Vision-Language-Vision Auto-Encoder Scalable Knowledge Distillation   from Diffusion Models.md
@@ -12,3 +10,6 @@ http://arxiv.org/abs/2507.11949v1,2507.11949,MOSPA: Human Motion Generation Driv
 http://arxiv.org/abs/2507.13334v1,2507.13334,A Survey of Context Engineering for Large Language Models,2025-07-18T08:32:31.283090,../summary/A Survey of Context Engineering for Large Language Models.md
 http://arxiv.org/abs/2507.13348v1,2507.13348,VisionThink: Smart and Efficient Vision Language Model via Reinforcement   Learning,2025-07-18T08:32:59.986026,../summary/VisionThink Smart and Efficient Vision Language Model via Reinforcement   Learning.md
 http://arxiv.org/abs/2507.13332v1,2507.13332,The Imitation Game: Turing Machine Imitator is Length Generalizable   Reasoner,2025-07-18T08:33:31.242097,../summary/The Imitation Game Turing Machine Imitator is Length Generalizable   Reasoner.md
+http://arxiv.org/abs/2507.11097v1,2507.11097,The Devil behind the mask: An emergent safety vulnerability of Diffusion   LLMs,2025-07-21T08:35:44.829864,../summary/The Devil behind the mask An emergent safety vulnerability of Diffusion   LLMs.md
+http://arxiv.org/abs/2507.12566v1,2507.12566,Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal   Large Language Models,2025-07-21T08:35:46.865060,../summary/Mono-InternVL-1.5 Towards Cheaper and Faster Monolithic Multimodal   Large Language Models.md
+http://arxiv.org/abs/2507.14137v1,2507.14137,Franca: Nested Matryoshka Clustering for Scalable Visual Representation   Learning,2025-07-21T08:36:29.265180,../summary/Franca Nested Matryoshka Clustering for Scalable Visual Representation   Learning.md
