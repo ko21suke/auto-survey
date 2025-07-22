@@ -1,5 +1,4 @@
 url,arxiv_id,title,summarized_at,file_path
-http://arxiv.org/abs/2507.10548v1,2507.10548,EmbRACE-3K: Embodied Reasoning and Action in Complex Environments,2025-07-15T08:32:27.487358,../summary/EmbRACE-3K Embodied Reasoning and Action in Complex Environments.md
 http://arxiv.org/abs/2507.10532v1,2507.10532,Reasoning or Memorization? Unreliable Results of Reinforcement Learning   Due to Data Contamination,2025-07-16T00:58:27.025704,../summary/Reasoning or Memorization Unreliable Results of Reinforcement Learning   Due to Data Contamination.md
 http://arxiv.org/abs/2507.07104v2,2507.07104,Vision-Language-Vision Auto-Encoder: Scalable Knowledge Distillation   from Diffusion Models,2025-07-16T08:32:34.459362,../summary/Vision-Language-Vision Auto-Encoder Scalable Knowledge Distillation   from Diffusion Models.md
 http://arxiv.org/abs/2507.09404v1,2507.09404,Scaling Laws for Optimal Data Mixtures,2025-07-16T08:33:12.835995,../summary/Scaling Laws for Optimal Data Mixtures.md
@@ -13,3 +12,6 @@ http://arxiv.org/abs/2507.13332v1,2507.13332,The Imitation Game: Turing Machine 
 http://arxiv.org/abs/2507.11097v1,2507.11097,The Devil behind the mask: An emergent safety vulnerability of Diffusion   LLMs,2025-07-21T08:35:44.829864,../summary/The Devil behind the mask An emergent safety vulnerability of Diffusion   LLMs.md
 http://arxiv.org/abs/2507.12566v1,2507.12566,Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal   Large Language Models,2025-07-21T08:35:46.865060,../summary/Mono-InternVL-1.5 Towards Cheaper and Faster Monolithic Multimodal   Large Language Models.md
 http://arxiv.org/abs/2507.14137v1,2507.14137,Franca: Nested Matryoshka Clustering for Scalable Visual Representation   Learning,2025-07-21T08:36:29.265180,../summary/Franca Nested Matryoshka Clustering for Scalable Visual Representation   Learning.md
+http://arxiv.org/abs/2507.14683v1,2507.14683,MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via   Context-Aware Multi-Stage Policy Optimization,2025-07-22T08:33:25.687327,../summary/MiroMind-M1 An Open-Source Advancement in Mathematical Reasoning via   Context-Aware Multi-Stage Policy Optimization.md
+http://arxiv.org/abs/2507.15846v1,2507.15846,GUI-G$^2$: Gaussian Reward Modeling for GUI Grounding,2025-07-22T08:34:03.682791,../summary/GUI-G$^2$ Gaussian Reward Modeling for GUI Grounding.md
+http://arxiv.org/abs/2507.14843v1,2507.14843,The Invisible Leash: Why RLVR May Not Escape Its Origin,2025-07-22T08:34:35.048903,../summary/The Invisible Leash Why RLVR May Not Escape Its Origin.md
