@@ -1,7 +1,4 @@
 url,arxiv_id,title,summarized_at,file_path
-http://arxiv.org/abs/2507.16075v1,2507.16075,Deep Researcher with Test-Time Diffusion,2025-07-28T08:35:03.134536,../summary/Deep Researcher with Test-Time Diffusion.md
-http://arxiv.org/abs/2507.18742v1,2507.18742,Specification Self-Correction: Mitigating In-Context Reward Hacking   Through Test-Time Refinement,2025-07-28T08:35:38.428282,../summary/Specification Self-Correction Mitigating In-Context Reward Hacking   Through Test-Time Refinement.md
-http://arxiv.org/abs/2507.17596v2,2507.17596,PRIX: Learning to Plan from Raw Pixels for End-to-End Autonomous Driving,2025-07-28T08:36:09.316513,../summary/PRIX Learning to Plan from Raw Pixels for End-to-End Autonomous Driving.md
 http://arxiv.org/abs/2507.19849v1,2507.19849,Agentic Reinforced Policy Optimization,2025-07-29T08:33:32.481481,../summary/Agentic Reinforced Policy Optimization.md
 http://arxiv.org/abs/2507.20939v1,2507.20939,ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World   Shorts,2025-07-29T08:34:07.229530,../summary/ARC-Hunyuan-Video-7B Structured Video Comprehension of Real-World   Shorts.md
 http://arxiv.org/abs/2507.21049v1,2507.21049,Rep-MTL: Unleashing the Power of Representation-level Task Saliency for   Multi-Task Learning,2025-07-29T08:34:39.608636,../summary/Rep-MTL Unleashing the Power of Representation-level Task Saliency for   Multi-Task Learning.md
@@ -14,3 +11,6 @@ http://arxiv.org/abs/2507.22448v1,2507.22448,Falcon-H1: A Family of Hybrid-Head 
 http://arxiv.org/abs/2507.23726v1,2507.23726,Seed-Prover: Deep and Broad Reasoning for Automated Theorem Proving,2025-08-01T08:33:27.150708,../summary/Seed-Prover Deep and Broad Reasoning for Automated Theorem Proving.md
 http://arxiv.org/abs/2507.23779v1,2507.23779,Phi-Ground Tech Report: Advancing Perception in GUI Grounding,2025-08-01T08:34:30.837607,../summary/Phi-Ground Tech Report Advancing Perception in GUI Grounding.md
 http://arxiv.org/abs/2507.22968v1,2507.22968,C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring   Challenges in Complex Conversations,2025-08-01T08:35:00.251604,../summary/C3 A Bilingual Benchmark for Spoken Dialogue Models Exploring   Challenges in Complex Conversations.md
+http://arxiv.org/abs/2508.00819v1,2508.00819,Beyond Fixed: Variable-Length Denoising for Diffusion Large Language   Models,2025-08-04T08:35:17.233693,../summary/Beyond Fixed Variable-Length Denoising for Diffusion Large Language   Models.md
+http://arxiv.org/abs/2507.23268v1,2507.23268,PixNerd: Pixel Neural Field Diffusion,2025-08-04T08:35:58.143336,../summary/PixNerd Pixel Neural Field Diffusion.md
+http://arxiv.org/abs/2507.23361v1,2507.23361,SWE-Exp: Experience-Driven Software Issue Resolution,2025-08-04T08:36:28.610441,../summary/SWE-Exp Experience-Driven Software Issue Resolution.md
