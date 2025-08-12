@@ -1,7 +1,7 @@
 url,arxiv_id,title,summarized_at,file_path
-http://arxiv.org/abs/2508.00819v1,2508.00819,Beyond Fixed: Variable-Length Denoising for Diffusion Large Language   Models,2025-08-04T08:35:17.233693,../summary/Beyond Fixed Variable-Length Denoising for Diffusion Large Language   Models.md
-http://arxiv.org/abs/2507.23268v1,2507.23268,PixNerd: Pixel Neural Field Diffusion,2025-08-04T08:35:58.143336,../summary/PixNerd Pixel Neural Field Diffusion.md
-http://arxiv.org/abs/2507.23361v1,2507.23361,SWE-Exp: Experience-Driven Software Issue Resolution,2025-08-04T08:36:28.610441,../summary/SWE-Exp Experience-Driven Software Issue Resolution.md
 http://arxiv.org/abs/2508.02324v1,2508.02324,Qwen-Image Technical Report,2025-08-05T08:34:45.405829,../summary/Qwen-Image Technical Report.md
 http://arxiv.org/abs/2508.01959v1,2508.01959,SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic   Association and Long Story Comprehension,2025-08-05T08:35:15.340803,../summary/SitEmb-v1.5 Improved Context-Aware Dense Retrieval for Semantic   Association and Long Story Comprehension.md
 http://arxiv.org/abs/2508.02276v1,2508.02276,CellForge: Agentic Design of Virtual Cell Models,2025-08-05T08:36:27.037603,../summary/CellForge Agentic Design of Virtual Cell Models.md
+http://arxiv.org/abs/2508.07999v1,2508.07999,WideSearch: Benchmarking Agentic Broad Info-Seeking,2025-08-12T08:31:32.022621,../summary/WideSearch Benchmarking Agentic Broad Info-Seeking.md
+http://arxiv.org/abs/2508.07050v1,2508.07050,ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability,2025-08-12T08:32:10.901769,../summary/ReasonRank Empowering Passage Ranking with Strong Reasoning Ability.md
+http://arxiv.org/abs/2508.07981v1,2508.07981,Omni-Effects: Unified and Spatially-Controllable Visual Effects   Generation,2025-08-12T08:32:52.180152,../summary/Omni-Effects Unified and Spatially-Controllable Visual Effects   Generation.md
