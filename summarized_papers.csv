@@ -1,1 +1,4 @@
 url,arxiv_id,title,summarized_at,file_path
+http://arxiv.org/abs/2509.08519v1,2509.08519,HuMo: Human-Centric Video Generation via Collaborative Multi-Modal   Conditioning,2025-09-12T08:27:55.135743,../summary/HuMo Human-Centric Video Generation via Collaborative Multi-Modal   Conditioning.md
+http://arxiv.org/abs/2509.09174v1,2509.09174,EchoX: Towards Mitigating Acoustic-Semantic Gap via Echo Training for   Speech-to-Speech LLMs,2025-09-12T08:28:31.227072,../summary/EchoX Towards Mitigating Acoustic-Semantic Gap via Echo Training for   Speech-to-Speech LLMs.md
+http://arxiv.org/abs/2509.09674v1,2509.09674,SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning,2025-09-12T08:29:13.229213,../summary/SimpleVLA-RL Scaling VLA Training via Reinforcement Learning.md
